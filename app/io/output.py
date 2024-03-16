@@ -24,7 +24,7 @@ def write_file_builtin(file_name, text):
     the built-in Python function
 
     Examples:
-        >>> write_file_builtin("./test.txt", "hello")
+        >>> write_file_builtin("data/test.txt", "hello")
 
     Args:
         file_name (str): Path to the file to write to.
