@@ -21,7 +21,7 @@ def read_file_builtin(file_name):
     Reads the file using the built-in Python function
 
     Examples:
-        >>> read_file_builtin("data/test.txt")
+        >>> read_file_builtin("../../data/test.txt")
         Text from the current fille print in console
 
     Args:
@@ -39,11 +39,11 @@ def read_file_builtin(file_name):
 
 def read_file_pandas(file_name):
     """
-    Reads the file using pandas and prints the DataFrame representation.
+    Reads the file using pandas and returns the DataFrame representation.
 
     Examples:
-        >>> read_file_pandas("data/test.txt")
-        Text from the current fille print in console
+        >>> read_file_pandas("../../data/test.txt")
+        Dataframe of file
 
     Args:
         file_name (str): The name of the file to read.
