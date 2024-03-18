@@ -42,7 +42,7 @@ def read_file_pandas(file_name):
     Reads the file using pandas and returns the DataFrame representation.
 
     Examples:
-        >>> read_file_pandas("../../data/test.txt")
+        >>> read_file_pandas("../../data/pandas_file.csv")
         Dataframe of file
 
     Args:
@@ -56,4 +56,4 @@ def read_file_pandas(file_name):
         ValueError: If the file format is invalid or cannot be parsed as a DataFrame.
     """
     df = pd.read_csv(file_name)
-    return df
+    return df["content"][0]
